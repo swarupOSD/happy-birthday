@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💌 শুভ জন্মদিন স্নেহাশিস</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <marquee class="marq">🎂 শুভ জন্মদিন স্নেহাশিস 🤍 অসীম ভালোবাসা রইল — নিজেকে ভালোবাসো 🌈💝</marquee>
+
+<div class="cake-box" id="cakeBox">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Birthday_candles.jpg" alt="Birthday Cake" />
+  <div class="click-text">🎁 ক্লিক করো আর চমক দেখো! 🎉</div>
+</div>
+
+
+  <div class="surprise hidden">
+    <h1>🎉 শুভ জন্মদিন স্নেহাশিস 🤍</h1>
+    <p class="bmsg">আজ একটা দিন, শুধু তোমার জন্য... 😊</p>
+    <p class="bmsg"><span id="cycle-text">💬 শুভেচ্ছা বার্তা ঘুরছে...</span></p>
+
+    <div class="photo-gallery">
+      <img src="https://wallpapers.com/images/hd/cute-anime-boys-6lmru8c09oo6a0xd.jpg" class="photo hidden" />
+      <img src="https://media.craiyon.com/2025-04-14/UhsvmSImSpCmLoU63yYfPA.webp" class="photo hidden" />
+      <img src="https://mrwallpaper.com/images/hd/a-boy-with-blue-hair-and-a-hoodie-ddlxf1jcpan2ujl4.jpg" class="photo hidden" />
+    </div>
+
+    <audio id="bg-music" src="song.mp3" loop></audio>
+    <canvas id="fireworks-canvas"></canvas>
+
+    <button onclick="startSurprise()">🎂 কেক কাটো আর গান বাজাও</button>
+
+    <div class="extra-buttons">
+      <button onclick="startFireworks()">🎆 আতশবাজি</button>
+      <button onclick="startConfetti()">🌈 কনফেটি</button>
+      <button onclick="openGallery()">📸 ছবির গ্যালারি</button>
+    </div>
+
+    <!-- 💌 মনের খাতা -->
+    <button onclick="showNote()">💌 মনের খাতা</button>
+    <div id="note-box" class="hidden">
+      <p>💖 আজকের এই ছোট্ট বার্তায়, অনেকটা মনের ভালবাসা লুকিয়ে আছে...<br>তুই ভালো থাক, তোর হাসি থাক — সেটাই আমার প্রার্থনা 😊🤍</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

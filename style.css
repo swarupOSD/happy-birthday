@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background: linear-gradient(#fff0f5, #ffe4e1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+.marq {
+  background: #ffe0e0;
+  color: #d63384;
+  font-weight: bold;
+  padding: 8px 0;
+  font-size: 18px;
+}
+.cake-box {
+  width: 260px;
+  margin: 80px auto;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+.cake-box img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ffb6c1;
+}
+.click-text {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #d63384;
+  font-weight: bold;
+}
+.surprise h1 {
+  color: #d63384;
+  font-size: 32px;
+}
+.bmsg {
+  font-size: 17px;
+  color: #5e1138;
+  margin: 10px auto;
+}
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.photo {
+  width: 230px;
+  border-radius: 15px;
+  border: 4px solid #ff69b4;
+  transition: 0.5s ease;
+}
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+.hidden {
+  display: none;
+}
+.extra-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#fireworks-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+/* 💌 Note Box */
+#note-box {
+  margin-top: 20px;
+  background: #fff0f5;
+  border-radius: 12px;
+  padding: 12px 18px;
+  color: #7b004c;
+  font-weight: bold;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 0 10px #ffb6c1;
+}
+/* Optional Pulse Animation */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.photo-gallery.active .photo {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.photo {
+  display: none;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
